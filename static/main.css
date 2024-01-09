@@ -139,7 +139,12 @@ p{
     content:"🌙 5:30 AM where I live";
     font-size: 25px;
 }
-
+.top-nav-bar>div>a{
+    transition: all .3s;
+}
+.top-nav-bar>div>a:hover{
+    text-decoration: line-through;
+}
 
 
 

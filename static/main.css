@@ -5,6 +5,7 @@ body{
     color: rgb(255, 255, 255);
     font-family: Arial, sans-serif;
     font-weight: lighter;
+    
 }
 .top-nav-bar{
     display: flex;
@@ -30,6 +31,7 @@ a{
     font-size: 50px;
     padding-right: 7%;
     font-weight: 100;
+    transition: all .3s ease-in-out 100ms;
 }
 .profile-1{
     height: 340px;
@@ -38,8 +40,8 @@ a{
     margin-right: 10%;
     animation-name: profile;
     animation-duration: 1.5s;
-    transition: all ease-in-out;
     filter: none;
+    transition: all .3s ease-in-out 100ms;
 }
 @keyframes profile {
     0%{border-radius: 0;filter: blur(8px);}
@@ -51,7 +53,7 @@ a{
     flex-direction: column;
     float: left;
     animation-name: header;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 @keyframes header {
     0%{color: transparent;margin-top:64px;}
@@ -69,6 +71,7 @@ h1{
     padding: 0;
     margin: 0;
     margin-top: 2vh;
+    transition: all .3s ease-in-out 100ms;
 }
 p{
     font-weight: 100;
@@ -87,25 +90,28 @@ p{
 }
 .time-teller{
     display: inline;
-    height: 61px;
-    width: 61px;
-    background-color: rgb(219, 219, 219);
-    border-radius: 30.5px;
+    height: 31px;
+    width: 31px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15.5px;
     margin-right: 6%;
     animation-name: example;
+    color: black;
+    text-align: center;
     animation-duration: 2s;
     transition: all .3s ease-in-out 100ms;
+    font-size: 20px;
 }
 @keyframes example{
     from {margin-right: 0%;border-radius: 0px;}
     to {margin-right: 6%;border-radius: 30.5px;}
 }
 .time-teller:hover{
-    padding-left: 40%;
+    width: 40%;
     border-radius: 0px;
+    background-color: white;
 }
 .quote-writer{
-    margin-top: 24vh;
     animation-name: quoting;
     animation-duration: 1s;
 }
@@ -118,62 +124,180 @@ p{
 }
 .bottom-right-1{
     float: right;
+    position: absolute;
+    bottom: 3%;
+    right: 2%;
 }
 .lower-info-1{
     font-size: 200%;
 }
+.time-teller:after{
+    content:'🌙';
+    /* ☀️ */
+}
+.time-teller:hover:after{
+    content:"🌙 5:30 AM where I live";
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:950px) {
     body{
         text-align: center;
     }
-    .main-content{
-        justify-content: none;
-        width: 100%;
-        background-color: green;
-        margin-top: 5vh;
+    .top-nav-bar{
+        display: flex;
+        height: 9vh;
+    
+        align-items: center;
+        font-weight: 100;
+        padding-left: 10%;
+        justify-content: space-between;
+        animation-name: top-anim;
+        animation-duration: 2s;
+    }
+
+    .top-buttons{
+        display: inline-flex;
+    
     }
     a{
+        text-decoration: none;
+        color: white;
         font-size: 25px;
+        padding-right: 7%;
+        font-weight: 100;
     }
-    .top-nav-bar{
-        height: 9vh;
+    .profile-1{
+        height: auto;
+        width: 50%;
+        border-radius: 50%;
+        float:none;
+        margin-left: 0%;
+        margin-right: 0;
+        animation-name: profile;
+        animation-duration: 1.5s;
+        transition: all ease-in-out;
+        filter: none;
     }
+    .main-heading{
+        display: block;
+        width: 100%;
+        flex-direction: column;
+        float: left;
+        animation-name: header;
+        animation-duration: 2s;
+        position: absolute;
+        top: 59vw;
+    }
+    @keyframes header {
+        0%{color: transparent;margin-top:64px;}
+        100%{color: white;}
+    }
+    
     .lower-heading{
         font-size: 24px;
         font-weight: 100;
-        display: block;
-    }
-    .profile-1{
-        height: 170px;
-        border-radius: 85px;
-        display: block;
-        margin-right: none;
+        margin: 0;
         float: none;
-    }
-    .bottom-right-1{
-        float:none;
-        display: block;
-    }
-    .quote{
-        float: none;
-    }
-    .quote-writer{
-        float: none;
+        margin-bottom: 3vh;
     }
     h1{
-        font-size: 5.2em;
-        display: block;
+        font-size: 4em;
+        font-weight: 100;
+        padding: 0;
+        margin: 0;
+        margin-top: 7vh;
+    }
+    .image-info{
+        position: absolute;
+        top:9vh;
+        align-items: center;
+        justify-content: center;
+    }
+    p{
+        font-weight: 100;
+        float: left;  
+        margin: 0;
+        padding: 0;  
+    }
+    .block-1{
+        background-color: black;
+        height: 75.5vh;
+        width:100%;
+        padding-left: 0;
+    }
+    .lower-info-1{
+        font-size: 120%;
+        margin: none;
+        padding: 10px;
+        margin-left: 5%;
+    }
+    .main-content{
+        justify-content: space-around;
+        width: 100%;
+        background-color: green;
+        margin-top: 0;
     }
     .time-teller{
+        display: inline;
         height: 31px;
         width: 31px;
         border-radius: 15.5px;
+        margin-right: 8%;
+        animation-name: example;
+        animation-duration: 2s;
+        transition: all .3s ease-in-out 100ms;
     }
-    .lower-info-1{
-        font-size: 100%;
-        display: block;
+    .quote{
+        color: transparent;
+        z-index: -10;
+        
     }
+    @keyframes quoting {
+        0%{color: transparent;}
+    }
+    @keyframes example{
+        from {margin-right: 0%;border-radius: 0px;}
+        to {margin-right: 8%;border-radius: 15.5px;}
+    }
+    .time-teller:hover{
+        width: 40%;
+        border-radius: 0px;
+        font-size: 25px;
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:1550px) and (min-width:950px){
     a{
         font-size: 25px;
@@ -220,12 +344,18 @@ p{
         font-size: 8em;
     }
     .time-teller{
-        height: 41px;
-        width: 41px;
+        height: 31px;
+        width: 31px;
         border-radius: 20.1px;
     }
     .lower-info-1{
         font-size: 150%;
+    }
+}
+@media screen and (max-width:470px){
+    .time-teller{
+        background-color: transparent;
+        content: "";
     }
 }
 /* body{

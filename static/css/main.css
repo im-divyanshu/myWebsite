@@ -16,10 +16,10 @@ body{
     padding-left: 10%;
     justify-content: space-between;
     animation-name: top-anim;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
 }
 @keyframes top-anim {
-    0%{padding-left: 0px;}
+    0%{padding-left: 5%;}
 }
 .top-buttons{
     display: inline-flex;
@@ -101,12 +101,12 @@ p{
     animation-name: example;
     color: black;
     text-align: center;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     transition: all .3s ease-in-out 100ms;
     font-size: 20px;
 }
 @keyframes example{
-    from {margin-right: 0%;border-radius: 0px;}
+    from {margin-right: 3%;border-radius: 0px;}
     to {margin-right: 6%;border-radius: 30.5px;}
 }
 .time-teller:hover{
@@ -135,11 +135,10 @@ p{
     font-size: 200%;
 }
 .time-teller:after{
-    content:'🌙';
-    /* ☀️ */
+    content:'📖';
 }
 .time-teller:hover:after{
-    content:"🌙 5:30 AM where I live";
+    content:"📖 Studiying for exams";
     font-size: 25px;
 }
 .top-nav-bar>div>a{

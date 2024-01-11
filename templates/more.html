@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+{% block body %}
+<style>
+    .card{
+        background-color: white;
+        color: black;
+        width: 25%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .card1 .card4 .card7{
+        margin-right: 10%;
+    }
+    .card-row{
+        display: flex;
+        height: 25%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card-container{
+        height: 89vh;
+        max-width: 100vw;
+        width: 100vw;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    @media (max-width:600px) {
+        .card-container{
+            gap:10px;
+        }
+        .card-row{
+            flex-direction: column;
+            height: 80%;
+            gap: 10px;
+            padding-right: 10%;
+        }
+        .card{
+            height: 700px;
+            width: 70%;
+        }
+    }
+    
+</style>
+
+
+<div class="card-container">
+
+    <div class="card-row card-row1">
+
+        <div class="card card1">A</div>
+        <div class="card card2">B</div>
+        <div class="card card3">C</div>
+        
+    </div>
+
+    <div class="card-row card-row2">
+        <div class="card card4">D</div>
+        <div class="card card5">E</div>
+        <div class="card card6">F</div>
+    </div>
+
+    <div class="card-row card-row3">
+        <div class="card card7">G</div>
+        <div class="card card8">H</div>
+        <div class="card card9">I</div>
+    </div>
+
+</div>
+
+{% endblock %}

@@ -8,3 +8,6 @@ def HomePage():
 @app.route("/writting")
 def writting():
     return render_template("my_hobbies_writting.html")
+@app.route("/more")
+def more_section():
+    return render_template("more.html")

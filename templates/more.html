@@ -15,17 +15,16 @@
     .card-row{
         display: flex;
         height: 25%;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
     .card-container{
         height: 89vh;
         max-width: 100vw;
         width: 100vw;
-        padding: 40px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
 
     }
     @media (max-width:600px) {
@@ -36,7 +35,9 @@
             flex-direction: column;
             height: 80%;
             gap: 10px;
-            padding-right: 10%;
+        }
+        .card-row1{
+            margin-top: 140vh;
         }
         .card{
             height: 700px;

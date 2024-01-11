@@ -6,7 +6,7 @@
         text-align: center;
     }
     .card{
-        background-color: white;
+        background-color: #D9D9D9;
         color: black;
         width: 25%;
         max-width: 350px;
@@ -17,15 +17,26 @@
         justify-content: center;
         align-items: center;
     }
+    .card-text{
+        margin: 0;
+        padding: 0;
+        font-size: 25px;
+    }
     .card-image{
-
+        width: 100%;
+        height: 80%;
+        object-fit:contain;
     }
     .card1 .card4 .card7{
         margin-right: 10%;
     }
+    hr{
+        margin: 0;
+        padding: 0;
+    }
     .card-row{
         display: flex;
-        height: 25%;
+        height: 29%;
         justify-content: space-around;
         align-items: center;
     }
@@ -53,7 +64,9 @@
         .card{
             height: 700px;
             width: 70%;
+            background-color: #D9D9D9;
         }
+
     }
     
 </style>
@@ -64,23 +77,59 @@
     <div class="card-container">
 
         <div class="card-row card-row1">
-
-            <div class="card card1" on>Writting</div>
-            <div class="card card2">Music</div>
-            <div class="card card3">Sports</div>
+            
+            <div class="card card1" onclick="location.href=`/writting`;">
+                <img src="static/images/writting-icon.png" class="card-image" alt="">
+                <hr>
+                <span class="card-text">Writting</span>
+            </div>
+            <div class="card card2">
+                <img src="static/images/music-icon.png" class="card-image" alt="">
+                <hr>
+                <span class="card-text">Music</span>
+            </div>
+            <div class="card card3">
+                <img src="static/images/writting-icon.png" class="card-image" alt="">
+                <hr>
+                <span class="card-text">Writting</span>
+            </div>
             
         </div>
 
         <div class="card-row card-row2">
-            <div class="card card4">Self Development</div>
-            <div class="card card5">E</div>
-            <div class="card card6">F</div>
+            <div class="card card4">
+                <img src="static/images/writting-icon.png" class="card-image" alt="">
+                <hr>
+                <span class="card-text">Writting</span>
+            </div>
+            <div class="card card5">
+                <img src="static/images/writting-icon.png" class="card-image" alt="">
+                <hr>
+                <span class="card-text">Writting</span>
+            </div>
+            <div class="card card6">
+                <img src="static/images/writting-icon.png" class="card-image" alt="">
+                <hr>
+                <span class="card-text">Writting</span>
+            </div>
         </div>
 
         <div class="card-row card-row3">
-            <div class="card card7">G</div>
-            <div class="card card8">H</div>
-            <div class="card card9">I</div>
+            <div class="card card7">
+                <img src="static/images/writting-icon.png" class="card-image" alt="">
+                <hr>
+                <span class="card-text">Writting</span>
+            </div>
+            <div class="card card8">
+                <img src="static/images/writting-icon.png" class="card-image" alt="">
+                <hr>
+                <span class="card-text">Writting</span>
+            </div>
+            <div class="card card9">
+                <img src="static/images/writting-icon.png" class="card-image" alt="">
+                <hr>
+                <span class="card-text">Writting</span>
+            </div>
         </div>
 
     </div>

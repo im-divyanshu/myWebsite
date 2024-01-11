@@ -383,6 +383,13 @@ p{
         content:'';
         /* ☀️ */
     }
+    a{
+        font-size: 18px;
+        padding-left: 4%;
+    }
+    .top-nav-bar{
+        padding-left: 3%;
+    }
 }
 /* body{
     margin: 0;

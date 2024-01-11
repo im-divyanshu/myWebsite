@@ -1,13 +1,24 @@
 {% extends "layout.html" %}
 {% block body %}
 <style>
+    .card-container{
+        padding-left: 5vw;
+        text-align: center;
+    }
     .card{
         background-color: white;
         color: black;
         width: 25%;
+        max-width: 350px;
+        min-width: 200px;
         height: 100%;
+        min-height: 110px;
+        max-height: 190px;
         justify-content: center;
         align-items: center;
+    }
+    .card-image{
+
     }
     .card1 .card4 .card7{
         margin-right: 10%;
@@ -21,7 +32,7 @@
     .card-container{
         height: 89vh;
         max-width: 100vw;
-        width: 100vw;
+        width: 90vw;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -37,7 +48,7 @@
             gap: 10px;
         }
         .card-row1{
-            margin-top: 140vh;
+            margin-top: 135vh;
         }
         .card{
             height: 700px;
@@ -47,29 +58,31 @@
     
 </style>
 
+<div class="continer-container">
 
-<div class="card-container">
 
-    <div class="card-row card-row1">
+    <div class="card-container">
 
-        <div class="card card1">A</div>
-        <div class="card card2">B</div>
-        <div class="card card3">C</div>
-        
+        <div class="card-row card-row1">
+
+            <div class="card card1" on>Writting</div>
+            <div class="card card2">Music</div>
+            <div class="card card3">Sports</div>
+            
+        </div>
+
+        <div class="card-row card-row2">
+            <div class="card card4">Self Development</div>
+            <div class="card card5">E</div>
+            <div class="card card6">F</div>
+        </div>
+
+        <div class="card-row card-row3">
+            <div class="card card7">G</div>
+            <div class="card card8">H</div>
+            <div class="card card9">I</div>
+        </div>
+
     </div>
-
-    <div class="card-row card-row2">
-        <div class="card card4">D</div>
-        <div class="card card5">E</div>
-        <div class="card card6">F</div>
-    </div>
-
-    <div class="card-row card-row3">
-        <div class="card card7">G</div>
-        <div class="card card8">H</div>
-        <div class="card card9">I</div>
-    </div>
-
 </div>
-
 {% endblock %}

@@ -11,3 +11,9 @@ def writting():
 @app.route("/more")
 def more_section():
     return render_template("more.html")
+@app.route("/contact")
+def load_contact_page():
+    return render_template("contact.html")
+@app.route("/projects")
+def load_projects_page():
+    return render_template("projects.html")

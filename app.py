@@ -1,7 +1,8 @@
-from flask import render_template,Flask,request
-import requests
+from flask import render_template,Flask,send_from_directory
+import os
 
 app=Flask(__name__)
+
 
 @app.route("/")
 def HomePage():

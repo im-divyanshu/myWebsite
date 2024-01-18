@@ -1,0 +1,1 @@
+print(f'type in ur chords, or type "clear" to clear the list. type "done" when your ready')

@@ -1,0 +1,514 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(41, 41, 41);
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    font-weight: lighter;
+    
+}
+.top-nav-bar{
+    display: flex;
+    height: 11vh;
+
+    align-items: center;
+    font-weight: 100;
+    padding-left: 10%;
+    justify-content: space-between;
+    animation-name: top-anim;
+    animation-duration: 1.5s;
+}
+@keyframes top-anim {
+    0%{padding-left: 5%;}
+}
+.top-buttons{
+    display: inline-flex;
+
+}
+a{
+    color:inherit;
+    text-decoration: none;
+    font-size: 50px;
+    padding-right: 7%;
+    font-weight: 100;
+    transition: all .3s ease-in-out 100ms;
+}
+.profile-1{
+    height: 340px;
+    border-radius: 170px;
+    float: right;
+    margin-right: 10%;
+    animation-name: profile;
+    animation-duration: 1.5s;
+    filter: none;
+    transition: all .3s ease-in-out 100ms;
+}
+.side_image{
+    height: 70vh;
+    margin-left: 100px;
+}
+@keyframes profile {
+    0%{border-radius: 0;filter: blur(8px);}
+    100%{filter: blur(0px);}
+}
+.main-heading{
+    display: inline-flex;
+    width: 60%;
+    flex-direction: column;
+    float: left;
+    animation-name: header;
+    animation-duration: 1s;
+}
+@keyframes header {
+    0%{color: transparent;margin-top:64px;}
+    100%{color: white;}
+}
+
+.lower-heading{
+    font-size: 20px;
+    font-weight: 100;
+    margin-left: 5px;
+}
+h1{
+    font-size: 10.4em;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+    margin-top: 2vh;
+    transition: all .3s ease-in-out 100ms;
+}
+p{
+    font-weight: 100;
+    float: left;
+}
+.block-1{
+    background-color: inherit;
+    height: 70vh;
+    width:90%;
+    padding-left: 10%;
+}
+.main-content{
+    /* width: 100%; */
+    margin-top: 18vh;
+}
+.time-teller{
+    display: inline;
+    height: 31px;
+    width: 31px;
+    background-color: inherit;
+    border-radius: 15.5px;
+    margin-right: 6%;
+    animation-name: example;
+    color: black;
+    text-align: center;
+    animation-duration: 1.5s;
+    transition: all .3s ease-in-out 100ms;
+    font-size: 20px;
+}
+@keyframes example{
+    from {margin-right: 3%;border-radius: 0px;}
+    to {margin-right: 6%;border-radius: 30.5px;}
+}
+.time-teller:hover{
+    width: 40%;
+    border-radius: 0px;
+    background-color: white;
+}
+.quote-writer{
+    animation-name: quoting;
+    animation-duration: 1s;
+}
+@keyframes quoting {
+    0%{color:transparent; margin-top:5vh}
+    100%{color:white}
+}
+.quote{
+    float: right;
+}
+.bottom-right-1{
+    float: right;
+    position: absolute;
+    bottom: 3%;
+    right: 2%;
+}
+.lower-info-1{
+    font-size: 200%;
+}
+.time-teller:after{
+    content:'📖';
+}
+.time-teller:hover:after{
+    content:"📖 Studiying for exams";
+    font-size: 25px;
+}
+.top-nav-bar>div>a{
+    transition: all .3s;
+}
+.top-nav-bar>div>a:hover{
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:950px) {
+    body{
+        text-align: center;
+    }
+    .top-nav-bar{
+        display: flex;
+        height: 9vh;
+    
+        align-items: center;
+        font-weight: 100;
+        padding-left: 10%;
+        justify-content: space-between;
+        animation-name: top-anim;
+        animation-duration: 2s;
+    }
+
+    .top-buttons{
+        display: inline-flex;
+    
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+        font-size: 25px;
+        padding-right: 7%;
+        font-weight: 100;
+    }
+    .profile-1{
+        height: 33vh;
+        width: auto;
+        border-radius: 50%;
+        float: none;
+        margin-left: 14vw;
+        margin-right: 0;
+        animation-name: profile;
+        animation-duration: 1.5s;
+        transition: all ease-in-out;
+        filter: none;
+    }
+    .side_image-vaccumetube{
+        position: relative;
+        height: auto;
+        width: 100%;
+        float:none;
+        margin-left: 0;
+        margin-right: 0;
+        filter: none;
+    }
+    .main-heading{
+        display: block;
+        width: 100%;
+        flex-direction: column;
+        float: left;
+        animation-name: header;
+        animation-duration: 2s;
+        position: absolute;
+        top: 42vh;
+    }
+    @keyframes header {
+        0%{color: transparent;margin-top:64px;}
+        100%{color: white;}
+    }
+    
+    .lower-heading{
+        font-size: 24px;
+        font-weight: 100;
+        margin: 0;
+        float: none;
+        margin-bottom: 3vh;
+    }
+    h1{
+        font-size: 4em;
+        font-weight: 100;
+        padding: 0;
+        margin: 0;
+        margin-top: 7vh;
+    }
+    .image-info{
+        position: absolute;
+        top:9vh;
+        align-items: center;
+        justify-content: center;
+    }
+    p{
+        font-weight: 100;
+        float: left;  
+        margin: 0;
+        padding: 0;  
+    }
+    .block-1{
+        background-color: inherit;
+        height: 75.5vh;
+        width:100%;
+        padding-left: 0;
+    }
+    .lower-info-1{
+        font-size: 120%;
+        margin: none;
+        padding: 10px;
+        margin-left: 5%;
+    }
+    .main-content{
+        justify-content: space-around;
+        width: 100%;
+        background-color: green;
+        margin-top: 0;
+    }
+    .time-teller{
+        display: inline;
+        height: 31px;
+        width: 31px;
+        border-radius: 15.5px;
+        margin-right: 8%;
+        animation-name: example;
+        animation-duration: 2s;
+        transition: all .3s ease-in-out 100ms;
+    }
+    .quote{
+        color: transparent;
+        z-index: -10;
+        font-size: 0;
+        height: 0;
+        
+    }
+    @keyframes quoting {
+        0%{color: transparent;}
+    }
+    @keyframes example{
+        from {margin-right: 0%;border-radius: 0px;}
+        to {margin-right: 8%;border-radius: 15.5px;}
+    }
+    .time-teller:hover{
+        width: 40%;
+        border-radius: 0px;
+        font-size: 25px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1550px) and (min-width:950px){
+    a{
+        font-size: 25px;
+    }
+    .top-nav-bar{
+        height: 9vh;
+    }
+    .lower-heading{
+        font-size: 24px;
+        font-weight: 100;
+    }
+    .profile-1{
+        height: 170px;
+        border-radius: 85px;
+    }
+    h1{
+        font-size: 5.2em;
+    }
+    .time-teller{
+        height: 31px;
+        width: 31px;
+        border-radius: 15.5px;
+    }
+    .lower-info-1{
+        font-size: 100%;
+    }
+}
+@media screen and (max-width:2020px) and ( min-width:1550px){
+    a{
+        font-size: 38px;
+    }
+    .top-nav-bar{
+        height: 10vh;
+    }
+    .lower-heading{
+        font-size: 36px;
+        font-weight: 100;
+    }
+    .profile-1{
+        height: 230px;
+        border-radius: 115px;
+    }
+    h1{
+        font-size: 8em;
+    }
+    .time-teller{
+        height: 31px;
+        width: 31px;
+        border-radius: 20.1px;
+    }
+    .lower-info-1{
+        font-size: 150%;
+    }
+}
+@media screen and (max-width:470px){
+    .time-teller{
+        background-color: transparent;
+        content: "";
+        font-size: 0px;
+        height: 0px;
+    }
+    .time-teller:after{
+        content:'';
+        /* ☀️ */
+    }
+    a{
+        font-size: 18px;
+        padding-left: 4%;
+    }
+    .top-nav-bar{
+        padding-left: 3%;
+    }
+}
+/* body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    font-weight: lighter;
+}
+.top-nav-bar{
+    display: flex;
+    height: 9vh;
+
+    align-items: center;
+    font-weight: 100;
+    padding-left: 10%;
+    justify-content: space-between;
+    animation-name: top-anim;
+    animation-duration: 2s;
+}
+@keyframes top-anim {
+    0%{padding-left: 0px;}
+}
+.top-buttons{
+    display: inline-flex;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding-right: 7%;
+    font-weight: 100;
+}
+.profile-1{
+    height: 34vh;
+    border-radius: 16vh;
+    float: right;
+    margin-right: 10%;
+    animation-name: profile;
+    animation-duration: 1.5s;
+    transition: all ease-in-out;
+    filter: none;
+}
+@keyframes profile {
+    0%{border-radius: 0;filter: blur(8px);}
+    100%{filter: blur(0px);}
+}
+.main-heading{
+    display: inline-flex;
+    width: 60%;
+    flex-direction: column;
+    float: left;
+    animation-name: header;
+    animation-duration: 2s;
+}
+@keyframes header {
+    0%{color: transparent;margin-top:64px;}
+    100%{color: white;}
+}
+
+.lower-heading{
+    font-size: 24px;
+    font-weight: 100;
+    margin-left: 5px;
+}
+h1{
+    font-size: 5.2em;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+    margin-top: 4vh;
+}
+p{
+    font-weight: 100;
+    float: left;
+}
+.block-1{
+    background-color: black;
+    height: 75.5vh;
+    width:90%;
+    padding-left: 10%;
+}
+.main-content{
+    justify-content: space-around;
+    width: 100%;
+    background-color: green;
+    margin-top: 12vh;
+}
+.time-teller{
+    display: inline;
+    height: 31px;
+    width: 31px;
+    background-color: rgb(219, 219, 219);
+    border-radius: 15.5px;
+    margin-right: 8%;
+    animation-name: example;
+    animation-duration: 2s;
+    transition: all .3s ease-in-out 100ms;
+}
+@keyframes example{
+    from {margin-right: 0%;border-radius: 0px;}
+    to {margin-right: 8%;border-radius: 15.5px;}
+}
+.time-teller:hover{
+    padding-left: 40%;
+    border-radius: 0px;
+}
+.quote-writer{
+    margin-top: 28vh;
+    animation-name: quoting;
+    animation-duration: 1s;
+}
+@keyframes quoting {
+    0%{color:transparent; margin-top:5vh}
+    100%{color:white}
+}
+.quote{
+    float: right;
+}
+.bottom-right-1{
+
+} */

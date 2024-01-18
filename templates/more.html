@@ -1,0 +1,167 @@
+{% extends "layout.html" %}
+{% block body %}
+<style>
+    .More{
+        text-decoration: line-through;
+    }
+    .card-container{
+        padding-left: 5vw;
+        text-align: center;
+    }
+    .card{
+        background-color: #ffffff;
+        color: black;
+        width: 25%;
+        max-width: 350px;
+        min-width: 200px;
+        height: 100%;
+        min-height: 110px;
+        max-height: 190px;
+        justify-content: center;
+        align-items: center;
+    }
+    .card:hover{
+        border: rgb(0, 255, 0) solid 2px;
+    }
+    .card-text{
+        margin: 0;
+        padding: 0;
+        font-size: 25px;
+    }
+    .card-image{
+        width: 100%;
+        height: 80%;
+        filter: blur(0px);
+        object-fit:contain;
+        animation-name: unblurr;
+        animation-duration: 1.5s;
+        transition: all ease-in-out;
+    }
+    @keyframes unblurr{
+        0%{filter: blur(5px);}
+        100%{filter: blur(0px);}
+    }
+    .card1 .card4 .card7{
+        margin-right: 10%;
+    }
+    .card-row1{
+        animation-name: carding;
+        animation-duration: 1.5s;
+        transition: all ease-in-out;
+    }
+    @keyframes carding {
+        0%{margin-top: 40vh;}
+        100%{margin-top: 0vh;}
+    }
+    hr{
+        margin: 0;
+        padding: 0;
+    }
+    .card-row{
+        display: flex;
+        height: 29%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .card-container{
+        height: 89vh;
+        max-width: 100vw;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+    @media (max-width:600px) {
+        .card-container{
+            gap:10px;
+        }
+        .card-row{
+            flex-direction: column;
+            height: 80%;
+            gap: 10px;
+        }
+        .card-row1{
+            margin-top: 110vh;
+            animation-name: carding;
+            animation-duration: 1.5s;
+            transition: all ease-in-out;
+        }
+        @keyframes carding {
+            0%{margin-top: 150vh;}
+            100%{margin-top: 110vh;}
+        }
+        .card{
+            height: 700px;
+            width: 70%;
+            background-color: #ffffff;
+        }
+
+    }
+    
+</style>
+
+<div class="continer-container">
+
+
+    <div class="card-container">
+
+        <div class="card-row card-row1">
+            
+            <div class="card card1" onclick="location.href=`/writting`;">
+                <img src="static/images/writting-icon.png" class="card-image" alt="">
+                <hr>
+                <span class="card-text">Writting</span>
+            </div>
+            <div class="card card2">
+                <img src="static/images/music-icon.png" class="card-image" alt="">
+                <hr>
+                <span class="card-text">Music</span>
+            </div>
+            <div class="card card3">
+                <img src="static/images/videos-icon.png" class="card-image" alt="">
+                <hr>
+                <span class="card-text">Video</span>
+            </div>
+            
+        </div>
+
+        <div class="card-row card-row2">
+            <div class="card card4">
+                <img src="static/images/space-icon.png" class="card-image" alt="">
+                <hr>
+                <span class="card-text">Space</span>
+            </div>
+            <div class="card card5">
+                <img src="static/images/network-icon.png" class="card-image" alt="">
+                <hr>
+                <span class="card-text">Network</span>
+            </div>
+            <div class="card card6">
+                <img src="static/images/friends-icon.png" class="card-image" alt="">
+                <hr>
+                <span class="card-text">Friends</span>
+            </div>
+        </div>
+
+        <div class="card-row card-row3">
+            <div class="card card7">
+                <img src="static/images/sports-icon.png" class="card-image" alt="">
+                <hr>
+                <span class="card-text">Sports</span>
+            </div>
+            <div class="card card8">
+                <img src="static/images/nature-icon.png" class="card-image" alt="">
+                <hr>
+                <span class="card-text">Nature</span>
+            </div>
+            <div class="card card9">
+                <img src="static/images/other-side-icon.png" class="card-image" alt="">
+                <hr>
+                <span class="card-text">Other Side</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

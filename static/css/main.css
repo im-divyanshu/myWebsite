@@ -2,4 +2,18 @@ body{
     padding: 0;
     margin: 0;
     background-color: #0f0f0f;
+
+    padding-left: 5%;
+}
+.top-nav{
+    height: 9vh;
+    background-color: rgba(0, 128, 0, 0.293);
+}
+img{
+    height: 60vh;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    float: left;
 }

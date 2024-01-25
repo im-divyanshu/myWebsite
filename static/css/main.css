@@ -1,19 +1,31 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: #0f0f0f;
+    background-color: #0a0a0a;
 
     padding-left: 5%;
 }
 .top-nav{
     height: 9vh;
-    background-color: rgba(0, 128, 0, 0.293);
+    background-color: rgba(0, 0, 0, 0);
 }
 img{
-    height: 60vh;
+    height: 76vh;
     width: auto;
     position: absolute;
-    bottom: 0;
+    bottom: 0vh;
     right: 0;
+    
     float: left;
+}
+@media (max-width:420px) {
+    .top-nav{
+        height: 0px;
+    }
+    img{
+        width: 100vw;
+        height: auto;
+        
+
+    }
 }
